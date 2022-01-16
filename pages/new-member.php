@@ -1,9 +1,5 @@
 <form action="../functions/create-member.php"  method="post">
   <div class="mb-3">
-    <label for="id" class="form-label">id</label>
-    <input type="text" name="id" class="form-control" id="id" placeholder="id">
-  </div>
-  <div class="mb-3">
     <label for="first-name" class="form-label">First-name</label>
     <input type="text" name="first-name" class="form-control" id="first-name" placeholder="first name">
   </div>

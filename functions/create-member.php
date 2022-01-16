@@ -14,9 +14,9 @@ try {
     die();
 }
 
-$sql = "INSERT INTO members (idmembers, first_name, last_name, birthday, city) VALUES (?,?,?,?,?)";
+$sql = "INSERT INTO members (first_name, last_name, birthday, city) VALUES (?,?,?,?)";
 $stmt= $dbh->prepare($sql);
-$stmt->execute([$_POST['id'], $_POST['first-name'], $_POST['last-name'], $_POST['birthday'], $_POST['city']]);
+$stmt->execute([$_POST['first-name'], $_POST['last-name'], $_POST['birthday'], $_POST['city']]);
 
 header('Location: http://0.0.0.0:70?page=members');
 
