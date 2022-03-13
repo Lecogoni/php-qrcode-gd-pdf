@@ -11,6 +11,12 @@ function getContentFolderFiles()
     $files = scandir($dir);
     unset($files[1]);
     unset($files[0]);
+    foreach ($files as $key => $value){
+      if (str_starts_with($value, 'new') or str_starts_with($value, 'updt')) {
+        unset($files[$key]);
+      }
+    }
+    //var_dump($files);
     return $files;
   }
 
@@ -19,3 +25,5 @@ function getContentFolderFiles()
   }
   
 ?>
+
+

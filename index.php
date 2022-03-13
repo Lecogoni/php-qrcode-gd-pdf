@@ -15,6 +15,8 @@
 
     <?php include_once("./templates/navbar.php") ?>
 
+    <!-- <?php phpinfo() ?> -->
+
     <main>
       <div class="container mt-3">
 
